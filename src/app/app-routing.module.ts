@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-// Task 1: Add imports here
+import { BookSearchComponent } from './book-search/book-search.component';
+import { BookComponent } from './book/book.component';
 
 const routes: Routes = [
-
-  // Task 1: Add routes here
-
+  { path: '', component: BookSearchComponent },
+  { path: 'book/:individual-book', component: BookComponent },
 ];
 
 @NgModule({
