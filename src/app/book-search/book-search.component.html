@@ -1,1 +1,22 @@
-<!-- Task 6: Add your solution here -->
+<div class="search-box">
+    <div class="search">
+        <input #searchBox id="search-box" (keyup.enter)="searchBA(bookSearchInput)" [(ngModel)]="bookSearchInput" placeholder="Search books by title or author name" />
+        <button class="search-button" (click)="searchBA(bookSearchInput)">Search</button>
+    </div>
+</div>
+
+<div class="no-book" *ngIf="nothing=== true">
+    <p>No Books Found!!</p>
+</div>
+
+<div class="book-grid">
+    <div class="book" *ngFor="let book of books">
+        <img [src]="book.image" />
+        <p class="book-author">By: {{book.author}}</p>
+        <div class="book-buttons">
+            <button (click)="downloadBook(book.id)">Download</button>
+            <button routerLink="/book/{{book.id}}">Read Now</button>
+        </div>
+    </div>
+</div>
+<div class="go-to-search">Not found what you are looking for? Try refining your search by adding more keywords.</div>

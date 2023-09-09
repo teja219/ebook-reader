@@ -1,5 +1,28 @@
 /* Task 8: Add your normal-font-size, large-font-size and larger-font-size classes here */
+.normal-font-size {
+    font-size: 23px;
+}
+
+.large-font-size {
+    font-size: 30px;
+}
+
+.larger-font-size {
+    font-size: 40px;
+    line-height: 40px !important;
+}
 
 /* Task 9: Add your normal-space-size, big-space-size and bigger-space-size  classes here */
+.normal-space-size {
+    line-height: 100% !important;
+}
+
+.big-space-size {
+    line-height: 150% !important;
+}
+
+.bigger-space-size {
+    line-height: 200% !important;
+}
 
 /* Task 10+15: Add your styling code here */
