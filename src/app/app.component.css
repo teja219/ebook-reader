@@ -1,1 +1,14 @@
-/* Task 3: Add your solution here */
+.header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #65521e;
+}
+
+.header p {
+    font-size: 30px;
+    cursor: pointer;
+    color: #bdae8a;
+}
+
+
